@@ -10,7 +10,7 @@ WORKDIR /app
 # Copy requirements and upgrade pip
 COPY requirements.txt .
 RUN pip install --upgrade pip
-RUN pip install -r requirements.txt
+RUN pip install --no-cache-dir --ignore-installed -r requirements.txt
 
 # Copy application files
 COPY . /app
