@@ -16,4 +16,3 @@ types-pyYAML>=6.0.1
 scipy>=1.11.3
 Flask>=3.0.0
 Flask-Cors>=4.0.0
--e .
