@@ -8,8 +8,8 @@ WORKDIR /app
 # Copy requirements and upgrade pip
 COPY requirements.txt .
 RUN apt update -y && apt install awscli -y
-    pip install --upgrade pip
-    pip install --no-cache-dir --ignore-installed -r requirements.txt
+RUN pip install --upgrade pip
+RUN pip install --no-cache-dir --ignore-installed -r requirements.txt
 
 # Copy application files
 COPY . /app
